@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibona", "Fibona\Fibona.csproj", "{AE64CE43-98B2-49B6-AB48-CF885C96A5B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SzorzoTabla", "SzorzoTabla\SzorzoTabla.csproj", "{F81B9D4B-A515-459D-95F7-395652C0B667}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pascal", "Pascal\Pascal.csproj", "{1E518988-3F97-44BC-875D-30794A8B7474}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE64CE43-98B2-49B6-AB48-CF885C96A5B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE64CE43-98B2-49B6-AB48-CF885C96A5B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE64CE43-98B2-49B6-AB48-CF885C96A5B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE64CE43-98B2-49B6-AB48-CF885C96A5B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F81B9D4B-A515-459D-95F7-395652C0B667}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F81B9D4B-A515-459D-95F7-395652C0B667}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F81B9D4B-A515-459D-95F7-395652C0B667}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F81B9D4B-A515-459D-95F7-395652C0B667}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E518988-3F97-44BC-875D-30794A8B7474}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E518988-3F97-44BC-875D-30794A8B7474}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E518988-3F97-44BC-875D-30794A8B7474}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E518988-3F97-44BC-875D-30794A8B7474}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A02A6E21-A02C-402E-852B-81516359EFDD}
+	EndGlobalSection
+EndGlobal
