@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SzorzoTabla", "SzorzoTabla\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pascal", "Pascal\Pascal.csproj", "{1E518988-3F97-44BC-875D-30794A8B7474}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VillogoGomb", "VillogoGomb\VillogoGomb.csproj", "{40FC4869-0AAA-4BE3-81E9-C3BFE0189634}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VillogoGomb", "VillogoGomb\VillogoGomb.csproj", "{40FC4869-0AAA-4BE3-81E9-C3BFE0189634}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomGombok", "RandomGombok\RandomGombok.csproj", "{BF221706-6E65-4B37-B1E7-D1BABC54A2FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RandomGombok", "RandomGombok\RandomGombok.csproj", "{BF221706-6E65-4B37-B1E7-D1BABC54A2FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hajokk", "Hajokk\Hajokk.csproj", "{E7F9E177-E1ED-42BC-9F11-29713DB76F3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{BF221706-6E65-4B37-B1E7-D1BABC54A2FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF221706-6E65-4B37-B1E7-D1BABC54A2FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF221706-6E65-4B37-B1E7-D1BABC54A2FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7F9E177-E1ED-42BC-9F11-29713DB76F3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7F9E177-E1ED-42BC-9F11-29713DB76F3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7F9E177-E1ED-42BC-9F11-29713DB76F3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7F9E177-E1ED-42BC-9F11-29713DB76F3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

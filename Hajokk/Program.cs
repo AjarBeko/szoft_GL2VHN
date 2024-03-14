@@ -1,4 +1,4 @@
-namespace Hajok
+namespace Hajokk
 {
     internal static class Program
     {
