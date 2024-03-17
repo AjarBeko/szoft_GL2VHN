@@ -51,30 +51,30 @@ namespace Hajokk
 
             try
             {
-
+                StreamReader sr = new StreamReader("hajozasi_szabalyzat_kerdessor_BOM.txt", true);
+                while (!sr.EndOfStream)
+                {
+                    string sor = sr.ReadLine();
+                    string[] tömb = sor.Split("\t");
+                    if (tömb.Length != 7) continue;
+                    Kérdések k = new Kérdések();
+                    k.KérdésSzöveg = tömb[1];
+                    k.Válasz1 = tömb[2];
+                    k.Válasz2 = tömb[3];
+                    k.Válasz3 = tömb[4];
+                    k.URL = tömb[5];
+                    int.TryParse(tömb[6], out int jóválasz);
+                    k.HelyesVálasz = jóválasz;
+                    kérdések.Add(k);
+                }
+                sr.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
 
-            StreamReader sr = new StreamReader("hajozasi_szabalyzat_kerdessor_BOM.txt", true);
-            while (!sr.EndOfStream)
-            {
-                string sor = sr.ReadLine();
-                string[] tömb = sor.Split("\t");
-                if (tömb.Length != 7) continue;
-                Kérdések k = new Kérdések();
-                k.KérdésSzöveg = tömb[1];
-                k.Válasz1 = tömb[2];
-                k.Válasz2 = tömb[3];
-                k.Válasz3 = tömb[4];
-                k.URL = tömb[5];
-                int.TryParse(tömb[6], out int jóválasz);
-                k.HelyesVálasz = jóválasz;
-                kérdések.Add(k);
-            }
-            sr.Close();
+            
             return kérdések;
         }
 
