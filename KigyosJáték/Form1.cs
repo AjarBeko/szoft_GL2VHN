@@ -66,7 +66,7 @@ namespace KigyosJáték
             ke.Left = fejX;
             kígyó.Add(ke);
 
-            if (lépésszám % 2 == 0) { ke.BackColor = Color.Fuchsia; }
+            if (lépésszám % 2 == 0) { ke.BackColor = Color.LightGreen; }
             
 
             if (lépésszám % 20 == 0)

@@ -13,7 +13,7 @@ namespace KigyosJáték
         {
             Height = Méret;
             Width = Méret;
-            BackColor = Color.Cyan;
+            BackColor = Color.Green;
         }
     }
     
