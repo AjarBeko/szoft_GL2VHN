@@ -29,9 +29,9 @@ namespace Hajokk
         void Kérdésmegjelenítés(Kérdések kérdések)
         {
             label1.Text = kérdések.KérdésSzöveg;
-            válaszGomb1.Text = kérdések.Válasz1;
-            válaszGomb2.Text = kérdések.Válasz2;
-            válaszGomb3.Text = kérdések.Válasz3;
+            VálG1.Text = kérdések.Válasz1;
+            VálG2.Text = kérdések.Válasz2;
+            VálG3.Text = kérdések.Válasz3;
 
             if (string.IsNullOrEmpty(kérdések.URL))
             {
@@ -51,30 +51,30 @@ namespace Hajokk
 
             try
             {
-
+                StreamReader sr = new StreamReader("hajozasi_szabalyzat_kerdessor_BOM.txt", true);
+                while (!sr.EndOfStream)
+                {
+                    string sor = sr.ReadLine();
+                    string[] tömb = sor.Split("\t");
+                    if (tömb.Length != 7) continue;
+                    Kérdések k = new Kérdések();
+                    k.KérdésSzöveg = tömb[1];
+                    k.Válasz1 = tömb[2];
+                    k.Válasz2 = tömb[3];
+                    k.Válasz3 = tömb[4];
+                    k.URL = tömb[5];
+                    int.TryParse(tömb[6], out int jóválasz);
+                    k.HelyesVálasz = jóválasz;
+                    kérdések.Add(k);
+                }
+                sr.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
 
-            StreamReader sr = new StreamReader("hajozasi_szabalyzat_kerdessor_BOM.txt", true);
-            while (!sr.EndOfStream)
-            {
-                string sor = sr.ReadLine();
-                string[] tömb = sor.Split("\t");
-                if (tömb.Length != 7) continue;
-                Kérdések k = new Kérdések();
-                k.KérdésSzöveg = tömb[1];
-                k.Válasz1 = tömb[2];
-                k.Válasz2 = tömb[3];
-                k.Válasz3 = tömb[4];
-                k.URL = tömb[5];
-                int.TryParse(tömb[6], out int jóválasz);
-                k.HelyesVálasz = jóválasz;
-                kérdések.Add(k);
-            }
-            sr.Close();
+            
             return kérdések;
         }
 
@@ -88,46 +88,48 @@ namespace Hajokk
         }
 
 
-        private void válaszGomb1_Click(object sender, EventArgs e)
+        private void VálG1_Click(object sender, EventArgs e)
         {
             if (AktuálisKérdések[AktuálisKérdés].HelyesVálasz == 1)
             {
-                válaszGomb1.BackColor  = Color.Green;
+                VálG1.BackColor = Color.Green;
             }
             else
             {
-                válaszGomb2.BackColor = Color.Red;
-                válaszGomb3.BackColor = Color.Red;
+                VálG2.BackColor = Color.Red;
+                VálG3.BackColor = Color.Red;
             }
 
         }
 
-        private void válaszGomb2_Click(object sender, EventArgs e)
+        private void VálG2_Click(object sender, EventArgs e)
         {
             if (AktuálisKérdések[AktuálisKérdés].HelyesVálasz == 2)
             {
-                válaszGomb2.BackColor = Color.Green;
+                VálG2.BackColor = Color.Green;
             }
             else
             {
-                válaszGomb1.BackColor = Color.Red;
-                válaszGomb3.BackColor = Color.Red;
+                VálG1.BackColor = Color.Red;
+                VálG3.BackColor = Color.Red;
             }
 
         }
 
-        private void válaszGomb3_Click(object sender, EventArgs e)
+        private void VálG3_Click(object sender, EventArgs e)
         {
             if (AktuálisKérdések[AktuálisKérdés].HelyesVálasz == 3)
             {
-                válaszGomb3.BackColor = Color.Green;
+                VálG3.BackColor = Color.Green;
             }
             else
             {
-                válaszGomb2.BackColor = Color.Red;
-                válaszGomb1.BackColor = Color.Red;
+                VálG2.BackColor = Color.Red;
+                VálG1.BackColor = Color.Red;
             }
 
         }
+
+
     }
 }
