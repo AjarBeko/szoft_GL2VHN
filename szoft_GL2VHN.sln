@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RandomGombok", "RandomGombo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hajokk", "Hajokk\Hajokk.csproj", "{E7F9E177-E1ED-42BC-9F11-29713DB76F3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KigyosJáték", "KigyosJáték\KigyosJáték.csproj", "{968833AD-55D1-4638-AE83-6BD18DA2E690}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KigyosJáték", "KigyosJáték\KigyosJáték.csproj", "{968833AD-55D1-4638-AE83-6BD18DA2E690}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adatkotes", "Adatkotes\Adatkotes.csproj", "{66AF1930-88E3-4DA7-A6CC-9386202B8BC2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{968833AD-55D1-4638-AE83-6BD18DA2E690}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{968833AD-55D1-4638-AE83-6BD18DA2E690}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{968833AD-55D1-4638-AE83-6BD18DA2E690}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66AF1930-88E3-4DA7-A6CC-9386202B8BC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66AF1930-88E3-4DA7-A6CC-9386202B8BC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66AF1930-88E3-4DA7-A6CC-9386202B8BC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66AF1930-88E3-4DA7-A6CC-9386202B8BC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
