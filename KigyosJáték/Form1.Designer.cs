@@ -35,14 +35,14 @@
             // timer1
             // 
             timer1.Enabled = true;
-            timer1.Interval = 250;
             timer1.Tick += timer1_Tick;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
             KeyDown += Form1_KeyDown;
