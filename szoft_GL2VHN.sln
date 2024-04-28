@@ -19,11 +19,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KigyosJáték", "KigyosJát
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adatkotes", "Adatkotes\Adatkotes.csproj", "{66AF1930-88E3-4DA7-A6CC-9386202B8BC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adatkotesek2", "Adatkotesek2\Adatkotesek2.csproj", "{78A40602-1367-4C85-865B-288F75F1D909}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adatkotesek2", "Adatkotesek2\Adatkotesek2.csproj", "{78A40602-1367-4C85-865B-288F75F1D909}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZH2_Gyak", "ZH2_Gyak\ZH2_Gyak.csproj", "{11F2BA1E-E203-4935-A8F3-58611C3FE364}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZH2_Gyak", "ZH2_Gyak\ZH2_Gyak.csproj", "{11F2BA1E-E203-4935-A8F3-58611C3FE364}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZH2_1", "ZH2_1\ZH2_1.csproj", "{82FB677F-414B-4AA6-A31D-C7D5C59C66E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZH2_1", "ZH2_1\ZH2_1.csproj", "{82FB677F-414B-4AA6-A31D-C7D5C59C66E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adatbazis", "Adatbazis\Adatbazis.csproj", "{C4946DE5-47E1-4572-A0F6-8DC57C443919}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{82FB677F-414B-4AA6-A31D-C7D5C59C66E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82FB677F-414B-4AA6-A31D-C7D5C59C66E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82FB677F-414B-4AA6-A31D-C7D5C59C66E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4946DE5-47E1-4572-A0F6-8DC57C443919}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4946DE5-47E1-4572-A0F6-8DC57C443919}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4946DE5-47E1-4572-A0F6-8DC57C443919}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4946DE5-47E1-4572-A0F6-8DC57C443919}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
